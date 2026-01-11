@@ -1,9 +1,5 @@
-# helloworld
+<div align="center">
 
-AstrBot 插件模板
+# astrbot_plugin_joinlog
 
-A template plugin for AstrBot plugin feature
-
-# 支持
-
-[帮助文档](https://astrbot.app)
+</div>
