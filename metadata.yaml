@@ -1,6 +1,6 @@
 name: astrbot_plugin_joinlog
 display_name: 加群日志
 desc: 记录群聊成员加入和退出的日志
-version: v0.0.0
+version: v0.0.1
 author: 东经雨
 repo: https://github.com/Dong-Jing-Yu/astrbot_plugin_joinlog
