@@ -3,6 +3,6 @@
     "description": "日志开关",
     "type": "bool",
     "hint": "是否启用日志记录功能",
-    "default": false
+    "default": true
   }
 }
