@@ -17,7 +17,7 @@ class JoinLog(Star):
             logger.info(string)
 
     @filter.platform_adapter_type(PlatformAdapterType.AIOCQHTTP)
-    async def handle_group_add(self, event: AiocqhttpMessageEvent):
+    async def handle_group(self, event: AiocqhttpMessageEvent):
         """处理加群和退群事件"""
         raw = getattr(event.message_obj, "raw_message", None)
         if not isinstance(raw, dict): return

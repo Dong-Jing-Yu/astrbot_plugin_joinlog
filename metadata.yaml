@@ -1,6 +1,8 @@
-name: astrbot_plugin_joinlog
+name: astrbot_plugin_grouplog
 display_name: 加群日志
-desc: 记录群聊成员加入和退出的日志
+desc: 记录群聊操作日志(AIOCQHTTP)
 version: v0.0.1
 author: 东经雨
-repo: https://github.com/Dong-Jing-Yu/astrbot_plugin_joinlog
+support_platforms: 
+  - aiocqhttp
+repo: https://github.com/Dong-Jing-Yu/astrbot_plugin_grouplog

@@ -1,6 +1,6 @@
 <div align="center">
 
-# astrbot_plugin_joinlog
+# astrbot_plugin_grouplog
 
 </div>
 
@@ -26,4 +26,7 @@ event.message_obj.raw_message (AIOCQHTTP)
 
 被踢出
 <Event, {'time': 时间戳, 'self_id': 自己的id, 'post_type': 'notice', 'group_id': 目标群, 'user_id': 目标用户, 'notice_type': 'group_decrease', 'sub_type': 'kick', 'operator_id': 操作人}>
+
+管理员撤回消息
+<Event, {'time': 时间戳, 'self_id': 自己的id, 'post_type': 'notice', 'group_id': 目标群, 'user_id': 目标用户, 'notice_type': 'group_recall', 'operator_id': 操作人, 'message_id': id}
 ```
