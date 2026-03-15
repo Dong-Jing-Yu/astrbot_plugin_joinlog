@@ -119,7 +119,7 @@ class GroupLog(Star):
                     await self.log("其他通知",f"用户 {user_id} 将群 {group_id} 的名称修改为 {name_new}")
                 elif sub_type == "poke":
                     target_id = raw.get("target_id")
-                    txt = raw.get("raw_info")
+                    txt = raw.get("raw_info", [])
                     await self.log("其他通知",f"用户 {user_id} {txt[2].get('txt')} {target_id}")
 
             # 撤回
@@ -142,7 +142,7 @@ class GroupLog(Star):
                 if sub_type == "add":
                     await self.log("精华消息",f"管理员 {operator_id} 将 {sender_id} 的消息 {message_id} 添加为精华")
                 elif sub_type == "delete":
-                    # 其实收不到这个消息
+                    # 好像收不到这个消息
                     await self.log("精华消息",f"管理员 {operator_id} 将 {sender_id} 的消息 {message_id} 移除精华")
             else:
                 await logger.warning(f"收到未处理的 notice_type: {notice_type} | raw: {raw}")
